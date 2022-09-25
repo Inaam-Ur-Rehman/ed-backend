@@ -9,6 +9,7 @@ const io = require("socket.io")(server, {
     origin: "https://ed-frontend-iota.vercel.app",
     methods: ["GET", "POST"],
   },
+allowEIO3: true
 });
 
 io.on("connection", (socket) => {
