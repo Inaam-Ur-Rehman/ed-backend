@@ -6,7 +6,7 @@ const io = require("socket.io")(server, {
   // configure websocket transport
   transports: ["websocket"],
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://ed-frontend-iota.vercel.app",
     methods: ["GET", "POST"],
   },
 });
