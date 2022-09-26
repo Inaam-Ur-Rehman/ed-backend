@@ -7,7 +7,6 @@ const io = require("socket.io")(server, {
   cors: {
     origin: "https://ed-frontend-iota.vercel.app",
     methods: ["GET", "POST"],
-    transports: ['websocket'],
   },
 allowEIO3: true
 });
@@ -25,6 +24,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(3000, () => {
-  console.log("fgrfgdg");
   console.log("Server is running on port 3000");
 });
