@@ -11,7 +11,7 @@ const io = require("socket.io")(server, {
   },
 allowEIO3: true
 });
-console.log("fgrfgdg");
+
 io.on("connection", (socket) => {
   console.log("connected");
   socket.on("get-document", (documentId) => {
@@ -25,5 +25,6 @@ io.on("connection", (socket) => {
 });
 
 server.listen(3000, () => {
-  console.log("Server is running on port 5000");
+  console.log("fgrfgdg");
+  console.log("Server is running on port 3000");
 });
