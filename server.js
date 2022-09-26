@@ -11,7 +11,7 @@ const io = require("socket.io")(server, {
   },
 allowEIO3: true
 });
-
+console.log("fgrfgdg");
 io.on("connection", (socket) => {
   console.log("connected");
   socket.on("get-document", (documentId) => {
